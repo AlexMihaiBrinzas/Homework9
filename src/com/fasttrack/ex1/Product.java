@@ -1,0 +1,41 @@
+package com.fasttrack.ex1;
+
+public class Product {
+    private int price;
+    private String name;
+    private String description;
+    private int quantity;
+
+    public Product(int price, String name, String description, int quantity) {
+        this.price = price;
+        this.name = name;
+        this.description = description;
+        this.quantity = quantity;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "price=" + price +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", quantity=" + quantity +
+                '}';
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+}
